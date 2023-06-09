@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:insetLeft="139dp"
+        android:text="Open Calculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/pg1"
+        android:layout_width="153dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="About Page"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/developersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Developed by Nurul Syafiqah Binti Azizan" />
+
+    <TextView
+        android:id="@+id/copyrightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:text="© 2023 Electricity Bill App. All rights reserved." />
+
+    <TextView
+        android:id="@+id/websiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:text="Visit my website in Github"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</LinearLayout>
