@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +43,15 @@ public class MainActivity extends AppCompatActivity {
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (editTextUnits.length()==0){
+                    editTextUnits.setError("Enter Value");
+                } else if (editTextRebate.length()==0){
+                    editTextUnits.setError("Enter Value of Percentage");
+                } else {
+                    Toast.makeText(MainActivity.this, "Recode added", Toast.LENGTH_SHORT).show();
+                }
                 calculateBill();
+
             }
         });
     }

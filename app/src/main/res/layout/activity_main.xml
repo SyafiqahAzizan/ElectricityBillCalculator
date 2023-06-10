@@ -36,23 +36,23 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="57dp"
+        android:gravity="center"
         android:text="Electricity Bill Estimator"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextUnits"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="63dp"
         android:hint="Number of Units (kWh)"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/editTextRebate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:hint="Rebate Percentage (0% - 5%)"
         android:inputType="numberDecimal" />
 
@@ -60,24 +60,39 @@
         android:id="@+id/buttonCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="add"
         android:text="Calculate Bill" />
 
     <TextView
         android:id="@+id/textViewTotalCharges"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="66dp"
+        android:paddingTop="16dp"
         android:text="Total Charges: "
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:paddingTop="16dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewFinalCost"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
+        android:paddingTop="8dp"
         android:text="Final Cost: "
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:paddingTop="8dp" />
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/copyrightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="250dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:text="© 2023 Electricity Bill App. All rights reserved."
+        android:textAlignment="center"
+        android:textSize="14sp" />
 
 </LinearLayout>
